@@ -1,5 +1,9 @@
 /.vscode/*
 
 /library/*
+library/*
 /local/*
+local/*
 /temp/*
+temp/*
+temp/scripts/assets/Script/Bullet.js
