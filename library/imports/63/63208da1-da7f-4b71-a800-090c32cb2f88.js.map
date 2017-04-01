@@ -1,0 +1,51 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "gameLogic",
+    "_gameTime",
+    "_maxGameTime",
+    "_score",
+    "_life",
+    "_maxLife",
+    "_enermyList",
+    "_bulletList",
+    "_spwanTimeGap",
+    "_lastSpwanEnermyTime",
+    "_spwanEnermyCallback",
+    "_gameOverCallback",
+    "_isPlaying",
+    "init",
+    "maxGameTime",
+    "maxLife",
+    "spwanEnermyCallback",
+    "gameOverCallback",
+    "start",
+    "update",
+    "dt",
+    "getGameLeftTime",
+    "gameOver",
+    "swpanEnermy",
+    "isPlaying",
+    "getGameTime",
+    "Math",
+    "max",
+    "getScore",
+    "getLife",
+    "addLife",
+    "cnt",
+    "min",
+    "reduceLife",
+    "addScore",
+    "reduceScore",
+    "module",
+    "exports"
+  ],
+  "mappings": "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",
+  "file": "unknown",
+  "sourcesContent": [
+    "\n// 游戏核心逻辑\nvar gameLogic = {\n    // 游戏时间\n    _gameTime: 0,\n    _maxGameTime: 60,\n    // 游戏积分\n    _score: 0,\n    // 生命值\n    _life: 1,\n    _maxLife: 1,\n    // 敌人数组\n    _enermyList: [],\n    // 子弹数组\n    _bulletList: [],\n    // 刷怪周期（秒）\n    _spwanTimeGap: 0.5,\n    // 上次刷怪时间\n    _lastSpwanEnermyTime: 0,\n    // 刷怪回调\n    _spwanEnermyCallback: null,\n    // 游戏结束回调\n    _gameOverCallback: null,\n    _isPlaying: false,\n\n    // 初始化\n    init: function(maxGameTime, maxLife, spwanEnermyCallback, gameOverCallback){\n        this._maxGameTime = maxGameTime;\n        this._life = this._maxLife = maxLife;\n        this._spwanEnermyCallback = spwanEnermyCallback;\n        this._gameOverCallback = gameOverCallback;\n    },\n\n    // 开始游戏\n    start: function(){\n        this._score = 0;\n        this._isPlaying = true;\n    },\n\n    // 应当每帧调用此方法\n    update: function(dt){\n        if(!this._isPlaying) return;\n\n        // 剩余时间\n        if(this.getGameLeftTime() == 0){\n            this.gameOver();\n            return;\n        }\n\n        // 累加时间，判断是否要刷怪\n        this._gameTime += dt;\n\n        if(this._gameTime > this._lastSpwanEnermyTime + this._spwanTimeGap){\n            this.swpanEnermy();\n        }\n    },\n\n    // 刷怪\n    swpanEnermy: function(){\n        this._lastSpwanEnermyTime = this._gameTime;\n\n        if(this._spwanEnermyCallback){\n            this._spwanEnermyCallback(this._gameTime);\n        }\n    },\n\n    // 是否正在游戏\n    isPlaying: function(){\n        return this._isPlaying;\n    },\n\n    // 获取游戏时间\n    getGameTime: function(){\n        return this._gameTime;\n    },\n\n    // 获取游戏剩余时间\n    getGameLeftTime: function(){\n        return Math.max(0, this._maxGameTime - this._gameTime);\n    },\n\n    // 获取游戏积分\n    getScore: function(){\n        return this._score;\n    },\n\n    // 获取生命值\n    getLife: function(){\n        return this._life;\n    },\n\n    // 增加生命值\n    addLife: function(cnt){\n        this._life  = Math.min(this._maxLife, this._life + cnt);\n    },\n\n    // 减少生命值\n    reduceLife: function(cnt){\n        this._life  = Math.max(0, this._life - cnt);\n        if(this._life == 0){\n            this.gameOver();\n        }\n    },\n\n    // 增加积分\n    addScore: function(cnt){\n        this._score += cnt;\n    },\n\n    // 减少积分\n    reduceScore: function(cnt){\n        this._score = Math.max(0, this._score - cnt);\n    },\n\n    // 游戏结束\n    gameOver: function(){\n        this._isPlaying = false;\n        if(this._gameOverCallback){\n            this._gameOverCallback();\n        }\n    }\n\n}\n\nmodule.exports = gameLogic;"
+  ]
+}

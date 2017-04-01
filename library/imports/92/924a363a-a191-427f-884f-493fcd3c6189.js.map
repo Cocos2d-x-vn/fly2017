@@ -1,0 +1,32 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "gameLogic",
+    "require",
+    "FlyingObject",
+    "cc",
+    "Class",
+    "extends",
+    "properties",
+    "typeTag",
+    "doOnLoad",
+    "doUpdate",
+    "dt",
+    "onCollisionEnter",
+    "other",
+    "self",
+    "flyingObj",
+    "getComponent",
+    "otherTypeTag",
+    "addScore",
+    "doDestory"
+  ],
+  "mappings": ";;AAAA,IAAIA,YAAYC,QAAQ,WAAR,CAAhB;AACA,IAAIC,eAAeD,QAAQ,cAAR,CAAnB;;AAEAE,GAAGC,KAAH,CAAS;AACLC,aAASH,YADJ;;AAGLI,gBAAY;AACRC,iBAAS;AADD,KAHP;;AAOLC,cAAU,oBAAU;AAChB;AACH,KATI;;AAWLC,cAAU,kBAASC,EAAT,EAAY;AAClB;AACH,KAbI;;AAeL;;;;;AAKAC,sBAAkB,0BAAUC,KAAV,EAAiBC,IAAjB,EAAuB;AACrC,YAAIC,YAAYF,MAAMG,YAAN,CAAmB,cAAnB,CAAhB;AACA,YAAIC,eAAeF,UAAUP,OAA7B;;AAEA,YAAGS,gBAAgB,QAAnB,EAA4B;AACxBhB,sBAAUiB,QAAV,CAAmB,EAAnB;AACAH,sBAAUI,SAAV;AACH;AACJ;AA5BI,CAAT",
+  "file": "unknown",
+  "sourcesContent": [
+    "var gameLogic = require('GameLogic');\nvar FlyingObject = require('FlyingObject');\n\ncc.Class({\n    extends: FlyingObject,\n\n    properties: {\n        typeTag: 'Bullet'\n    },\n\n    doOnLoad: function(){\n        // cc.log('bullet speed - onLoad: (%s, %s)', this._speedX, this._speedY);\n    },\n\n    doUpdate: function(dt){\n        // cc.log('Bullet.doUpdate(%s)', dt);\n    },\n\n    /**\n     * 当碰撞产生的时候调用\n     * @param  {Collider} other 产生碰撞的另一个碰撞组件\n     * @param  {Collider} self  产生碰撞的自身的碰撞组件\n     */\n    onCollisionEnter: function (other, self) {\n        var flyingObj = other.getComponent('FlyingObject');\n        var otherTypeTag = flyingObj.typeTag;\n\n        if(otherTypeTag == 'Enermy'){\n            gameLogic.addScore(10);\n            flyingObj.doDestory();\n        }\n    }\n});\n"
+  ]
+}

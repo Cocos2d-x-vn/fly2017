@@ -1,0 +1,45 @@
+{
+  "version": 3,
+  "sources": [
+    "unknown"
+  ],
+  "names": [
+    "FlyingObject",
+    "require",
+    "cc",
+    "Class",
+    "extends",
+    "properties",
+    "typeTag",
+    "_splitEnable",
+    "_splitRate",
+    "_splitY",
+    "doOnLoad",
+    "Math",
+    "random",
+    "_y",
+    "doUpdate",
+    "dt",
+    "x",
+    "node",
+    "y",
+    "i",
+    "newEnermyNode",
+    "instantiate",
+    "newEnermy",
+    "getComponent",
+    "parent",
+    "setSplitEnable",
+    "setPosition",
+    "setSpeed",
+    "enable",
+    "onCollisionEnter",
+    "other",
+    "self"
+  ],
+  "mappings": ";;AAAA,IAAIA,eAAeC,QAAQ,cAAR,CAAnB;;AAEAC,GAAGC,KAAH,CAAS;AACLC,aAASJ,YADJ;;AAGLK,gBAAY;AACRC,iBAAS,QADD;;AAGR;AACAC,sBAAc,IAJN;AAKRC,oBAAY,GALJ;AAMRC,iBAAS;AAND,KAHP;;AAYLC,cAAU,oBAAU;AAChB;AACA,YAAG,KAAKH,YAAL,IAAqBI,KAAKC,MAAL,KAAgB,KAAKJ,UAA7C,EAAwD;AACpD,iBAAKC,OAAL,GAAe,KAAKI,EAAL,GAAUF,KAAKC,MAAL,KAAgB,GAAzC;AACH;AACJ,KAjBI;;AAmBLE,cAAU,kBAASC,EAAT,EAAY;AAClB;AACA;AACA,YAAG,KAAKR,YAAL,IAAqB,KAAKE,OAAL,IAAgB,IAArC,IAA6C,KAAKI,EAAL,GAAU,KAAKJ,OAA/D,EAAuE;AACnE,iBAAKA,OAAL,GAAe,IAAf;;AAEA,gBAAIO,IAAI,KAAKC,IAAL,CAAUD,CAAlB;AACA,gBAAIE,IAAI,KAAKD,IAAL,CAAUC,CAAlB;;AAEA,iBAAI,IAAIC,IAAE,CAAV,EAAaA,IAAE,CAAf,EAAkBA,GAAlB,EACA;AACI,oBAAIC,gBAAgBlB,GAAGmB,WAAH,CAAe,KAAKJ,IAApB,CAApB;AACA,oBAAIK,YAAYF,cAAcG,YAAd,CAA2B,QAA3B,CAAhB;;AAEAH,8BAAcI,MAAd,GAAuB,KAAKP,IAAL,CAAUO,MAAjC;AACAF,0BAAUG,cAAV,CAAyB,KAAzB;AACAH,0BAAUI,WAAV,CAAsB,KAAKT,IAAL,CAAUD,CAAV,GAAcG,IAAI,EAAlB,GAAuB,EAA7C,EAAiD,KAAKF,IAAL,CAAUC,CAA3D;AACAI,0BAAUK,QAAV,CAAmBR,IAAI,EAAJ,GAAS,EAA5B;AACH;AACJ;AACJ,KAvCI;;AAyCL;AACAM,oBAAgB,wBAASG,MAAT,EAAgB;AAC5B,aAAKrB,YAAL,GAAoBqB,MAApB;AACH,KA5CI;;AA8CL;;;;;AAKAC,sBAAkB,0BAAUC,KAAV,EAAiBC,IAAjB,EAAuB,CAExC;;AArDI,CAAT",
+  "file": "unknown",
+  "sourcesContent": [
+    "var FlyingObject = require('FlyingObject');\n\ncc.Class({\n    extends: FlyingObject,\n\n    properties: {\n        typeTag: 'Enermy',\n\n        // 增加一些趣味，概率分裂\n        _splitEnable: true,\n        _splitRate: 0.8,\n        _splitY: null,\n    },\n    \n    doOnLoad: function(){\n        // cc.log('Enermy speed - onLoad: (%s, %s)', this._speedX, this._speedY);\n        if(this._splitEnable && Math.random() < this._splitRate){\n            this._splitY = this._y - Math.random() * 300;\n        }\n    },\n\n    doUpdate: function(dt){\n        // cc.log('Enermy.doUpdate(%s)', dt);\n        // 分裂\n        if(this._splitEnable && this._splitY != null && this._y < this._splitY){\n            this._splitY = null;\n\n            var x = this.node.x;\n            var y = this.node.y;\n\n            for(var i=0; i<3; i++)\n            {\n                var newEnermyNode = cc.instantiate(this.node);\n                var newEnermy = newEnermyNode.getComponent('Enermy');\n\n                newEnermyNode.parent = this.node.parent;\n                newEnermy.setSplitEnable(false);\n                newEnermy.setPosition(this.node.x + i * 10 - 10, this.node.y);\n                newEnermy.setSpeed(i * 10 - 10);\n            }\n        }\n    },\n\n    // 设置是否可以分裂\n    setSplitEnable: function(enable){\n        this._splitEnable = enable;\n    },\n\n    /**\n     * 当碰撞产生的时候调用\n     * @param  {Collider} other 产生碰撞的另一个碰撞组件\n     * @param  {Collider} self  产生碰撞的自身的碰撞组件\n     */\n    onCollisionEnter: function (other, self) {\n\n    }\n    \n});\n"
+  ]
+}
