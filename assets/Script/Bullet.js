@@ -5,7 +5,10 @@ cc.Class({
     extends: FlyingObject,
 
     properties: {
-        typeTag: 'Bullet'
+        typeTag: {
+            default: 'Bullet',
+            override: true
+        }
     },
 
     doOnLoad: function(){

@@ -8,7 +8,10 @@ cc.Class({
     extends: FlyingObject,
 
     properties: {
-        typeTag: 'PlayerPlane',
+        typeTag: {
+            default: 'PlayerPlane',
+            override: true
+        },
 
         // 子弹预制件
         bullet: {
@@ -97,7 +100,7 @@ cc.Class({
                 var bulletInst = cc.instantiate(this.bullet);
                 var bullet = bulletInst.getComponent('Bullet');
                 bulletInst.parent = this.bulletContainer;
-                bullet.setPosition(this.node.x + i * 10 - 10, this.node.y + 30);
+                bullet.setPosition(this.node.x + i * 10 - 10, this.node.y + 40);
                 bullet.setSpeed(i * 10 - 10, 15);
                 bullet.setLiveLimit(3);
                 this._lastFireTimePassed = 0;
@@ -106,7 +109,7 @@ cc.Class({
             var bulletInst = cc.instantiate(this.bullet);
             var bullet = bulletInst.getComponent('Bullet');
             bulletInst.parent = this.bulletContainer;
-            bullet.setPosition(this.node.x, this.node.y + 30);
+            bullet.setPosition(this.node.x, this.node.y + 40);
             bullet.setSpeed(0, 15);
             bullet.setLiveLimit(3);
             this._lastFireTimePassed = 0;

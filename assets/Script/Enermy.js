@@ -4,8 +4,11 @@ cc.Class({
     extends: FlyingObject,
 
     properties: {
-        typeTag: 'Enermy',
-
+        typeTag: {
+            default: 'Enermy',
+            override: true
+        },
+        
         // 增加一些趣味，概率分裂
         _splitEnable: true,
         _splitRate: 0.8,
