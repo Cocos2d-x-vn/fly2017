@@ -88,8 +88,6 @@ cc.Class({
 
     // called every frame, uncomment this function to activate update callback
     doUpdate: function (dt) {
-        if(!gameLogic.isPlaying()) return;
-
         // 判断x移动方向
         if(this._lastX > this._x){
             // 往左移动
@@ -104,6 +102,9 @@ cc.Class({
             this._changePlaneSprite('player01_01');
             this.node.scaleX = 1;
         }
+
+        // 如果游戏未进行中，则中断
+        if(!gameLogic.isPlaying()) return;
 
         // 开火
         if(this._isFiring && this._lastFireTimePassed >= FIRE_GAP){

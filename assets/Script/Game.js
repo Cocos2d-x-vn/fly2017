@@ -43,6 +43,11 @@ cc.Class({
 
     // use this for initialization
     onLoad: function () {
+        this.startGame();
+    },
+
+    // 开始游戏
+    startGame: function(){
         // 启用碰撞
         var manager = cc.director.getCollisionManager();
         manager.enabled = true;
@@ -108,11 +113,15 @@ cc.Class({
 
     // 游戏结束具体实现
     gameOver: function(){
+        // 关闭碰撞
+        var manager = cc.director.getCollisionManager();
+        manager.enabled = false;
+
         this.updateTime();
         this.updateScore();
         this.updateLife();
 
-        if(gameLogic.getGameLeftTime() <= 0){
+        if(gameLogic.getLife() > 0){
             this.gameOverLabel.string = 'You Win!\n骚年可以的';
         }else{
             this.gameOverLabel.string = 'Game Over!\n太菜了';
