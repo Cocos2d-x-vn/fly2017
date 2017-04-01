@@ -8,7 +8,7 @@ cc.Class({
             default: 'Enermy',
             override: true
         },
-        
+
         // 增加一些趣味，概率分裂
         _splitEnable: true,
         _splitRate: 0.8,
@@ -16,7 +16,15 @@ cc.Class({
     },
     
     doOnLoad: function(){
-        // cc.log('Enermy speed - onLoad: (%s, %s)', this._speedX, this._speedY);
+        // 自动显示随机图片
+        var self = this;
+        cc.loader.loadRes("Enermy/stones", cc.SpriteAtlas, function (err, atlas) {
+            var frameName = 'yunshi-0' + (Math.round(Math.random() * 4) + 1).toString();
+            var frame = atlas.getSpriteFrame(frameName);
+            var sprite = self.getComponent(cc.Sprite);
+            sprite.spriteFrame = frame;
+        });
+
         if(this._splitEnable && Math.random() < this._splitRate){
             this._splitY = this._y - Math.random() * 300;
         }

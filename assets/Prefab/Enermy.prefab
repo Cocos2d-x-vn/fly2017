@@ -15,8 +15,8 @@
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
-      "r": 176,
-      "g": 8,
+      "r": 255,
+      "g": 255,
       "b": 255,
       "a": 255
     },
@@ -29,8 +29,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 50,
-      "height": 50
+      "width": 80,
+      "height": 80
     },
     "_children": [],
     "_rotationX": 0,
@@ -75,7 +75,7 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "410fb916-8721-4663-bab8-34397391ace7"
+      "__uuid__": "770b5d45-31e2-44ee-9212-834b97bc741e"
     },
     "_type": 0,
     "_sizeMode": 0,
@@ -90,7 +90,9 @@
     "_isTrimmedMode": true,
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
-    "_atlas": null
+    "_atlas": {
+      "__uuid__": "a254dfd7-c9ae-43b9-a041-dce2ab57f3d0"
+    }
   },
   {
     "__type__": "24f0ei6fE1KMb8zb89kRKO8",
@@ -100,12 +102,17 @@
       "__id__": 1
     },
     "_enabled": true,
+    "typeTag": "Enermy",
     "_liveTime": 0,
     "_liveTimeLimit": 0,
     "_speedX": 0,
     "_speedY": 0,
     "_x": 0,
-    "_y": 0
+    "_y": 0,
+    "_moveRect": null,
+    "_splitEnable": true,
+    "_splitRate": 0.8,
+    "_splitY": null
   },
   {
     "__type__": "cc.BoxCollider",
@@ -123,8 +130,8 @@
     },
     "_size": {
       "__type__": "cc.Size",
-      "width": 50,
-      "height": 50
+      "width": 80,
+      "height": 80
     }
   },
   {
