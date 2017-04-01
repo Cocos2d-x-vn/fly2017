@@ -51,7 +51,6 @@ cc.Class({
             }else{
                 this._x = Math.min(Math.max(this._moveRect.x, this._x + this._speedX), this._moveRect.xMax);
                 this._y = Math.min(Math.max(this._moveRect.y, this._y + this._speedY), this._moveRect.yMax);
-                cc.log('Plane (%s, %s)', this._x, this._y);
             }
 
             this.updatePosition();

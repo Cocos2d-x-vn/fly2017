@@ -1,2 +1,5 @@
 /.vscode/*
-/library/*/local/*/temp/*
+
+/library/*
+/local/*
+/temp/*
