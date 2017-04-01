@@ -34,6 +34,9 @@ cc.Class({
             return;
         }
 
+        // logic before update
+        this.beforeDoUpdate(dt);
+
         // 存活检测
         this._liveTime += dt;
         
@@ -60,8 +63,13 @@ cc.Class({
         this.doUpdate(dt);
     },
 
+    
     doOnLoad: function(){
         // 一般由子类实现具体逻辑
+    },
+
+    beforeDoUpdate: function(dt){
+         // 一般由子类实现具体逻辑
     },
 
     // 执行每帧update操作，一般子类覆盖此方法
