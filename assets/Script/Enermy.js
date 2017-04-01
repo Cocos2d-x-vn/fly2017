@@ -25,6 +25,10 @@ cc.Class({
             sprite.spriteFrame = frame;
         });
 
+        // 随机缩放尺寸 (0.5~2)
+        this.node.scaleX = this.node.scaleY = Math.random() * 1.5 + 0.5;
+
+        // 计算是否要触发分裂
         if(this._splitEnable && Math.random() < this._splitRate){
             this._splitY = this._y - Math.random() * 300;
         }
