@@ -9,6 +9,21 @@ cc.Class({
             override: true
         },
 
+        // 爆炸预制件
+        bomb: {
+            default: null,
+            type: cc.Prefab
+        },
+
+        // 正在爆炸
+        _isBomb: 0,
+
+        // 爆炸实例
+        _bombInstance: {
+            default: null,
+            type: cc.Node
+        },
+
         // 增加一些趣味，概率分裂
         _splitEnable: true,
         _splitRate: 0.8,
@@ -63,13 +78,38 @@ cc.Class({
         this._splitEnable = enable;
     },
 
-    /**
-     * 当碰撞产生的时候调用
-     * @param  {Collider} other 产生碰撞的另一个碰撞组件
-     * @param  {Collider} self  产生碰撞的自身的碰撞组件
-     */
-    onCollisionEnter: function (other, self) {
+    // 销毁(override)
+    doDestory: function(){
+        if(!cc.isValid(this.node) || this._isBomb) return;
+        this._isBomb = 1;
 
+        // 创建爆炸
+        this._bombInstance = cc.instantiate(this.bomb);
+        var anim = this._bombInstance.getComponent(cc.Animation);
+
+        this._bombInstance.parent = this.node.parent;
+        this._bombInstance.x = this.node.x;
+        this._bombInstance.y = this.node.y;
+        this._bombInstance.scaleX = this.node.scaleX;
+        this._bombInstance.scaleY = this.node.scaleY;
+
+        anim.on('finished', this.onBombFinish, this);
+        anim.play('bomb');
+
+        // 隐藏自己
+        this.node.active = false;
+    },
+
+    // 爆炸结束
+    onBombFinish: function(event){
+        // 销毁爆炸特效和自己
+        if ( cc.isValid( this._bombInstance) ) {
+            this._bombInstance.destroy();
+        }
+
+        if ( cc.isValid(this.node) ) {
+            this.node.destroy();
+        }
     }
     
 });

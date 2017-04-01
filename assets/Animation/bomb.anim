@@ -1,0 +1,81 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "bomb",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.31666666666666665,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {},
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "d3c48d4f-a2e1-464f-89d5-3e74be9d40b6"
+            }
+          },
+          {
+            "frame": 0.03333333333333333,
+            "value": {
+              "__uuid__": "5b8d184f-e1b0-456c-97c0-41a29ac0d373"
+            }
+          },
+          {
+            "frame": 0.06666666666666667,
+            "value": {
+              "__uuid__": "720900f6-3b18-4af2-8a89-95f95ab43dc7"
+            }
+          },
+          {
+            "frame": 0.1,
+            "value": {
+              "__uuid__": "a44c5db6-9245-4fa9-8c58-42be715f4ac0"
+            }
+          },
+          {
+            "frame": 0.13333333333333333,
+            "value": {
+              "__uuid__": "b7c13689-3812-458d-a999-99d7ae58083b"
+            }
+          },
+          {
+            "frame": 0.16666666666666666,
+            "value": {
+              "__uuid__": "2e257e0c-a225-4fbc-8b29-ca92fc395de6"
+            }
+          },
+          {
+            "frame": 0.2,
+            "value": {
+              "__uuid__": "c44981b2-d9ea-44da-88eb-33241f5d5dc2"
+            }
+          },
+          {
+            "frame": 0.23333333333333334,
+            "value": {
+              "__uuid__": "6a9c3e4e-c1ca-4e29-89b4-a33cff329beb"
+            }
+          },
+          {
+            "frame": 0.26666666666666666,
+            "value": {
+              "__uuid__": "ff3bec68-0751-4962-a21d-bc22c5f2e6d9"
+            }
+          },
+          {
+            "frame": 0.3,
+            "value": {
+              "__uuid__": "da83ca2d-21ee-4a50-a6cb-8ec01621ce11"
+            }
+          }
+        ]
+      }
+    },
+    "props": {}
+  },
+  "events": []
+}
