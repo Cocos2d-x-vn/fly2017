@@ -48,6 +48,7 @@ cc.Class({
         manager.enabled = true;
 
         var game = this;
+
         // 初始化
         gameLogic.init(
             // 游戏时间

@@ -36,6 +36,9 @@ cc.Class({
         _keyUpPress: 0,
         _keyDownPress: 0,
 
+        // 触摸相关记录
+        _currTouchPos: null,
+
         // 上一帧位置
         _lastX: 0,
         _lastY: 0,
@@ -57,17 +60,30 @@ cc.Class({
         });
         this._currAtlasFrame = 'player01_01';
 
+        // 初始化一些属性
         this.setSpeed(0, 0);
         this.setLiveLimit(0);
         this.setPosition(this.node.x, this.node.y);
         this.setMoveRect(-350, -647, 700, 1300);
+
+        // 注册键盘事件
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
+
+        // 注册Touch事件
+        var canvas = cc.find('Canvas');
+        canvas.on(cc.Node.EventType.TOUCH_START, this.onTouchStart, this);
+        canvas.on(cc.Node.EventType.TOUCH_MOVE, this.onTouchMove, this);
+        canvas.on(cc.Node.EventType.TOUCH_END,  this.onTouchEnd, this);
     },
 
     beforeDoUpdate: function(dt){
+        // 记录上一帧位置
         this._lastX = this._x;
         this._lastY = this._y;
+
+        // 移动到Touch点（如果有）
+        this.moveToTouchPoint();
     },
 
     // called every frame, uncomment this function to activate update callback
@@ -144,6 +160,31 @@ cc.Class({
                 this._keyDownPress = 0;
                 this.updteSpeed();
                 break;
+        }
+    },
+
+    onTouchStart: function(event){
+        this._currTouchPos = event.getTouches()[0].getLocation();
+    },
+
+    onTouchMove: function(event){
+        this._currTouchPos = event.getTouches()[0].getLocation();
+    },
+
+    onTouchEnd: function(event){
+        this._currTouchPos = null;
+        this.setSpeed(0, 0);
+    },
+
+    moveToTouchPoint: function(){
+        if(this._currTouchPos){
+            var xSpeed = (this._currTouchPos.x - 375 - this.node.x) / 10;
+            var ySpeed = (this._currTouchPos.y - 667 - this.node.y) / 10;
+
+            this.setSpeed(
+                xSpeed,
+                ySpeed
+            );
         }
     },
 
