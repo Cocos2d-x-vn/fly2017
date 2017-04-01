@@ -19,6 +19,8 @@ cc.Class({
         // 自动显示随机图片
         var self = this;
         cc.loader.loadRes("Enermy/stones", cc.SpriteAtlas, function (err, atlas) {
+            // 有可能还没创建就被摧毁了
+            if(!cc.isValid(self)) return;
             var frameName = 'yunshi-0' + (Math.round(Math.random() * 4) + 1).toString();
             var frame = atlas.getSpriteFrame(frameName);
             var sprite = self.getComponent(cc.Sprite);
