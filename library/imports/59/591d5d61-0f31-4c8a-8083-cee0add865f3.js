@@ -16,7 +16,9 @@ cc.Class({
         _speedY: 0,
         // 位置
         _x: 0,
-        _y: 0
+        _y: 0,
+        // 限制移动范围
+        _moveRect: null
     },
 
     // use this for initialization
@@ -42,10 +44,18 @@ cc.Class({
         }
 
         // move
-        this._x += this._speedX;
-        this._y += this._speedY;
+        if (this._speedX != 0 || this._speedY != 0) {
+            if (!this._moveRect) {
+                this._x += this._speedX;
+                this._y += this._speedY;
+            } else {
+                this._x = Math.min(Math.max(this._moveRect.x, this._x + this._speedX), this._moveRect.xMax);
+                this._y = Math.min(Math.max(this._moveRect.y, this._y + this._speedY), this._moveRect.yMax);
+                cc.log('Plane (%s, %s)', this._x, this._y);
+            }
 
-        this.updatePosition();
+            this.updatePosition();
+        }
 
         // logic update
         this.doUpdate(dt);
@@ -84,6 +94,11 @@ cc.Class({
         this._x = x;
         this._y = y;
         this.updatePosition();
+    },
+
+    // 设置限制移动范围
+    setMoveRect: function setMoveRect(x, y, w, h) {
+        this._moveRect = cc.rect(x, y, w, h);
     },
 
     // 更新位置

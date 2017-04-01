@@ -1,53 +1,98 @@
-2017-04-01T02:08:16.905Z - normal: Load ~/.CocosCreator/settings.json
-2017-04-01T02:08:16.920Z - normal: checking language setting...
-2017-04-01T02:08:16.920Z - normal: Language: zh
-2017-04-01T02:08:17.465Z - success: protocol editor-framework registered
-2017-04-01T02:08:17.466Z - success: protocol app registered
-2017-04-01T02:08:17.466Z - success: protocol theme registered
-2017-04-01T02:08:17.467Z - success: protocol profile registered
-2017-04-01T02:08:17.467Z - success: protocol packages registered
-2017-04-01T02:08:17.473Z - success: protocol unpack registerred
-2017-04-01T02:08:17.474Z - success: protocol disable-commonjs registerred
-2017-04-01T02:08:17.690Z - normal: connected!
-2017-04-01T02:08:17.693Z - normal: Check project /Users/yanbin/projects/cocos_projects/fly2017
-2017-04-01T02:08:17.697Z - normal: Initializing Cocos2d
-2017-04-01T02:08:17.973Z - normal: Initializing Asset Database
-2017-04-01T02:08:18.002Z - success: protocol uuid registerred
-2017-04-01T02:08:18.002Z - success: protocol db registerred
-2017-04-01T02:08:18.003Z - success: protocol thumbnail registerred
-2017-04-01T02:08:18.003Z - normal: Loading editor/builtin packages
-2017-04-01T02:08:18.139Z - success: assets loaded
-2017-04-01T02:08:18.144Z - success: builder loaded
-2017-04-01T02:08:18.156Z - success: hierarchy loaded
-2017-04-01T02:08:18.162Z - success: inspector loaded
-2017-04-01T02:08:18.163Z - success: keystore loaded
-2017-04-01T02:08:18.167Z - success: node-library loaded
-2017-04-01T02:08:18.170Z - success: preferences loaded
-2017-04-01T02:08:18.192Z - success: project-importer loaded
-2017-04-01T02:08:18.196Z - success: project-settings loaded
-2017-04-01T02:08:18.202Z - success: ui-kit loaded
-2017-04-01T02:08:18.209Z - success: ui-grid loaded
-2017-04-01T02:08:18.216Z - success: scene loaded
-2017-04-01T02:08:18.218Z - success: sprite-editor loaded
-2017-04-01T02:08:18.265Z - success: store loaded
-2017-04-01T02:08:18.273Z - success: timeline loaded
-2017-04-01T02:08:18.273Z - normal: Loading builtin packages
-2017-04-01T02:08:18.278Z - success: anysdk loaded
-2017-04-01T02:08:18.282Z - success: asset-db-debugger loaded
-2017-04-01T02:08:18.283Z - success: code-editor loaded
-2017-04-01T02:08:18.284Z - success: color-picker loaded
-2017-04-01T02:08:18.289Z - success: console loaded
-2017-04-01T02:08:18.292Z - success: package-manager loaded
-2017-04-01T02:08:18.297Z - success: tester loaded
-2017-04-01T02:08:18.301Z - success: ui-kit-preview-extra loaded
-2017-04-01T02:08:18.305Z - success: ui-kit-preview loaded
-2017-04-01T02:08:18.312Z - success: ui-tree loaded
-2017-04-01T02:08:18.360Z - normal: Initializing project /Users/yanbin/projects/cocos_projects/fly2017
-2017-04-01T02:08:18.376Z - normal: Loading packages
-2017-04-01T02:08:18.387Z - normal: package load
-2017-04-01T02:08:18.388Z - success: json-lint loaded
-2017-04-01T02:08:18.388Z - normal: Watching packages
-2017-04-01T02:08:18.411Z - normal: Run Application
-2017-04-01T02:08:18.776Z - success: preview server running at http://localhost:7457
-2017-04-01T02:08:18.776Z - normal: Compiling scripts...
-2017-04-01T02:08:21.074Z - normal: Compiled project javascript file successfully
+2017-04-01T02:33:31.032Z - normal: Load ~/.CocosCreator/settings.json
+2017-04-01T02:33:31.038Z - normal: checking language setting...
+2017-04-01T02:33:31.038Z - normal: Language: zh
+2017-04-01T02:33:31.629Z - success: protocol editor-framework registered
+2017-04-01T02:33:31.630Z - success: protocol app registered
+2017-04-01T02:33:31.630Z - success: protocol theme registered
+2017-04-01T02:33:31.630Z - success: protocol profile registered
+2017-04-01T02:33:31.630Z - success: protocol packages registered
+2017-04-01T02:33:31.633Z - success: protocol unpack registerred
+2017-04-01T02:33:31.633Z - success: protocol disable-commonjs registerred
+2017-04-01T02:33:31.953Z - normal: connected!
+2017-04-01T02:33:31.955Z - normal: Check project /Users/yanbin/projects/cocos_projects/fly2017
+2017-04-01T02:33:31.958Z - normal: Initializing Cocos2d
+2017-04-01T02:33:32.263Z - normal: Initializing Asset Database
+2017-04-01T02:33:32.294Z - success: protocol uuid registerred
+2017-04-01T02:33:32.294Z - success: protocol db registerred
+2017-04-01T02:33:32.294Z - success: protocol thumbnail registerred
+2017-04-01T02:33:32.295Z - normal: Loading editor/builtin packages
+2017-04-01T02:33:32.473Z - success: assets loaded
+2017-04-01T02:33:32.477Z - success: builder loaded
+2017-04-01T02:33:32.484Z - success: hierarchy loaded
+2017-04-01T02:33:32.491Z - success: inspector loaded
+2017-04-01T02:33:32.493Z - success: keystore loaded
+2017-04-01T02:33:32.500Z - success: node-library loaded
+2017-04-01T02:33:32.503Z - success: preferences loaded
+2017-04-01T02:33:32.524Z - success: project-importer loaded
+2017-04-01T02:33:32.527Z - success: project-settings loaded
+2017-04-01T02:33:32.531Z - success: ui-kit loaded
+2017-04-01T02:33:32.537Z - success: ui-grid loaded
+2017-04-01T02:33:32.543Z - success: scene loaded
+2017-04-01T02:33:32.546Z - success: sprite-editor loaded
+2017-04-01T02:33:32.642Z - success: store loaded
+2017-04-01T02:33:32.650Z - success: timeline loaded
+2017-04-01T02:33:32.651Z - normal: Loading builtin packages
+2017-04-01T02:33:32.656Z - success: anysdk loaded
+2017-04-01T02:33:32.660Z - success: asset-db-debugger loaded
+2017-04-01T02:33:32.663Z - success: code-editor loaded
+2017-04-01T02:33:32.665Z - success: color-picker loaded
+2017-04-01T02:33:32.672Z - success: console loaded
+2017-04-01T02:33:32.677Z - success: package-manager loaded
+2017-04-01T02:33:32.683Z - success: tester loaded
+2017-04-01T02:33:32.688Z - success: ui-kit-preview-extra loaded
+2017-04-01T02:33:32.692Z - success: ui-kit-preview loaded
+2017-04-01T02:33:32.697Z - success: ui-tree loaded
+2017-04-01T02:33:32.746Z - normal: Initializing project /Users/yanbin/projects/cocos_projects/fly2017
+2017-04-01T02:33:32.748Z - normal: Loading packages
+2017-04-01T02:33:32.760Z - normal: package load
+2017-04-01T02:33:32.761Z - success: json-lint loaded
+2017-04-01T02:33:32.761Z - normal: Watching packages
+2017-04-01T02:33:32.779Z - normal: Run Application
+2017-04-01T02:33:33.386Z - success: preview server running at http://localhost:7456
+2017-04-01T02:33:36.830Z - normal: 1.4.2
+2017-04-01T02:33:37.250Z - warn: 'Bullet.typeTag' hides inherited property 'FlyingObject.typeTag'. To make the current property override that implementation, add the `override: true` attribute please.
+2017-04-01T02:33:37.251Z - warn: 'Enermy.typeTag' hides inherited property 'FlyingObject.typeTag'. To make the current property override that implementation, add the `override: true` attribute please.
+2017-04-01T02:33:37.261Z - warn: 'PlayerPlane.typeTag' hides inherited property 'FlyingObject.typeTag'. To make the current property override that implementation, add the `override: true` attribute please.
+2017-04-01T02:49:36.841Z - normal: Compiled project javascript file successfully
+2017-04-01T02:49:36.939Z - warn: 'Bullet.typeTag' hides inherited property 'FlyingObject.typeTag'. To make the current property override that implementation, add the `override: true` attribute please.
+2017-04-01T02:49:36.940Z - warn: 'Enermy.typeTag' hides inherited property 'FlyingObject.typeTag'. To make the current property override that implementation, add the `override: true` attribute please.
+2017-04-01T02:49:36.946Z - warn: 'PlayerPlane.typeTag' hides inherited property 'FlyingObject.typeTag'. To make the current property override that implementation, add the `override: true` attribute please.
+2017-04-01T02:56:43.899Z - normal: Compiled project javascript file successfully
+2017-04-01T02:56:44.006Z - warn: 'Bullet.typeTag' hides inherited property 'FlyingObject.typeTag'. To make the current property override that implementation, add the `override: true` attribute please.
+2017-04-01T02:56:44.007Z - warn: 'Enermy.typeTag' hides inherited property 'FlyingObject.typeTag'. To make the current property override that implementation, add the `override: true` attribute please.
+2017-04-01T02:56:44.010Z - warn: 'PlayerPlane.typeTag' hides inherited property 'FlyingObject.typeTag'. To make the current property override that implementation, add the `override: true` attribute please.
+2017-04-01T02:56:48.780Z - success: API data generated and copied to /Users/yanbin/projects/cocos_projects/fly2017/creator.d.ts
+2017-04-01T02:56:51.032Z - success: VS Code extension installed to /Users/yanbin/.vscode/extensions
+2017-04-01T02:56:53.446Z - success: Chrome debug setting has been updated to .vscode/launch.json, please install Debugger for Chrome VS Code extension to debug your project.
+2017-04-01T02:58:53.130Z - normal: Compiled project javascript file successfully
+2017-04-01T02:58:53.229Z - warn: 'Bullet.typeTag' hides inherited property 'FlyingObject.typeTag'. To make the current property override that implementation, add the `override: true` attribute please.
+2017-04-01T02:58:53.230Z - warn: 'Enermy.typeTag' hides inherited property 'FlyingObject.typeTag'. To make the current property override that implementation, add the `override: true` attribute please.
+2017-04-01T02:58:53.233Z - warn: 'PlayerPlane.typeTag' hides inherited property 'FlyingObject.typeTag'. To make the current property override that implementation, add the `override: true` attribute please.
+2017-04-01T03:38:13.970Z - normal: Compiled project javascript file successfully
+2017-04-01T03:38:14.098Z - warn: 'Bullet.typeTag' hides inherited property 'FlyingObject.typeTag'. To make the current property override that implementation, add the `override: true` attribute please.
+2017-04-01T03:38:14.099Z - warn: 'Enermy.typeTag' hides inherited property 'FlyingObject.typeTag'. To make the current property override that implementation, add the `override: true` attribute please.
+2017-04-01T03:38:14.102Z - warn: 'PlayerPlane.typeTag' hides inherited property 'FlyingObject.typeTag'. To make the current property override that implementation, add the `override: true` attribute please.
+2017-04-01T03:38:40.913Z - normal: Compiled project javascript file successfully
+2017-04-01T03:38:40.999Z - warn: 'Bullet.typeTag' hides inherited property 'FlyingObject.typeTag'. To make the current property override that implementation, add the `override: true` attribute please.
+2017-04-01T03:38:41.000Z - warn: 'Enermy.typeTag' hides inherited property 'FlyingObject.typeTag'. To make the current property override that implementation, add the `override: true` attribute please.
+2017-04-01T03:38:41.003Z - warn: 'PlayerPlane.typeTag' hides inherited property 'FlyingObject.typeTag'. To make the current property override that implementation, add the `override: true` attribute please.
+2017-04-01T03:39:15.241Z - normal: Compiled project javascript file successfully
+2017-04-01T03:39:15.314Z - warn: 'Bullet.typeTag' hides inherited property 'FlyingObject.typeTag'. To make the current property override that implementation, add the `override: true` attribute please.
+2017-04-01T03:39:15.314Z - warn: 'Enermy.typeTag' hides inherited property 'FlyingObject.typeTag'. To make the current property override that implementation, add the `override: true` attribute please.
+2017-04-01T03:39:15.316Z - warn: 'PlayerPlane.typeTag' hides inherited property 'FlyingObject.typeTag'. To make the current property override that implementation, add the `override: true` attribute please.
+2017-04-01T03:40:30.729Z - normal: Compiled project javascript file successfully
+2017-04-01T03:40:30.769Z - warn: 'Bullet.typeTag' hides inherited property 'FlyingObject.typeTag'. To make the current property override that implementation, add the `override: true` attribute please.
+2017-04-01T03:40:30.770Z - warn: 'Enermy.typeTag' hides inherited property 'FlyingObject.typeTag'. To make the current property override that implementation, add the `override: true` attribute please.
+2017-04-01T03:40:30.773Z - warn: 'PlayerPlane.typeTag' hides inherited property 'FlyingObject.typeTag'. To make the current property override that implementation, add the `override: true` attribute please.
+2017-04-01T03:41:03.234Z - normal: Compiled project javascript file successfully
+2017-04-01T03:41:03.284Z - warn: 'Bullet.typeTag' hides inherited property 'FlyingObject.typeTag'. To make the current property override that implementation, add the `override: true` attribute please.
+2017-04-01T03:41:03.285Z - warn: 'Enermy.typeTag' hides inherited property 'FlyingObject.typeTag'. To make the current property override that implementation, add the `override: true` attribute please.
+2017-04-01T03:41:03.288Z - warn: 'PlayerPlane.typeTag' hides inherited property 'FlyingObject.typeTag'. To make the current property override that implementation, add the `override: true` attribute please.
+2017-04-01T04:42:31.506Z - normal: Compiled project javascript file successfully
+2017-04-01T04:42:31.595Z - warn: 'Bullet.typeTag' hides inherited property 'FlyingObject.typeTag'. To make the current property override that implementation, add the `override: true` attribute please.
+2017-04-01T04:42:31.597Z - warn: 'Enermy.typeTag' hides inherited property 'FlyingObject.typeTag'. To make the current property override that implementation, add the `override: true` attribute please.
+2017-04-01T04:42:31.605Z - warn: 'PlayerPlane.typeTag' hides inherited property 'FlyingObject.typeTag'. To make the current property override that implementation, add the `override: true` attribute please.
+2017-04-01T04:50:13.632Z - normal: Compiled project javascript file successfully
+2017-04-01T04:50:13.763Z - warn: 'Bullet.typeTag' hides inherited property 'FlyingObject.typeTag'. To make the current property override that implementation, add the `override: true` attribute please.
+2017-04-01T04:50:13.764Z - warn: 'Enermy.typeTag' hides inherited property 'FlyingObject.typeTag'. To make the current property override that implementation, add the `override: true` attribute please.
+2017-04-01T04:50:13.770Z - warn: 'PlayerPlane.typeTag' hides inherited property 'FlyingObject.typeTag'. To make the current property override that implementation, add the `override: true` attribute please.

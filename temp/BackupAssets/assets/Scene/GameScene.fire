@@ -258,7 +258,7 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": 0,
-      "y": -563
+      "y": -647
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -323,6 +323,7 @@
     "_speedY": 0,
     "_x": 0,
     "_y": 0,
+    "_moveRect": null,
     "bullet": {
       "__uuid__": "ae7d3dfd-083c-4496-abbf-2d9be9987ad2"
     },

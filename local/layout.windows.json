@@ -7,8 +7,8 @@
       "windowType": "dockable",
       "x": 0,
       "y": 23,
-      "width": 1232,
-      "height": 720,
+      "width": 1234,
+      "height": 777,
       "layout": {
         "children": [
           {
@@ -84,7 +84,8 @@
         "timeline",
         "node-library"
       ]
-    }
+    },
+    "worker": {}
   },
   "panels": {
     "code-editor": {
@@ -98,6 +99,12 @@
       "y": 127,
       "width": 584,
       "height": 548
+    },
+    "builder": {
+      "x": 679,
+      "y": 167,
+      "width": 500,
+      "height": 722
     }
   }
 }

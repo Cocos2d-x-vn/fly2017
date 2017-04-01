@@ -35,6 +35,7 @@ cc.Class({
         this.setSpeed(0, 0);
         this.setLiveLimit(0);
         this.setPosition(this.node.x, this.node.y);
+        this.setMoveRect(-350, -647, 700, 1300);
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
     },

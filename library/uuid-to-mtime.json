@@ -245,8 +245,8 @@
     "relativePath": "Texture/HelloWorld.png"
   },
   "aa279b76-4e8f-4527-9b5a-67550cf52d9a": {
-    "asset": 1491012690000,
-    "meta": 1491012690000,
+    "asset": 1491017957000,
+    "meta": 1491017957000,
     "relativePath": "Scene/GameScene.fire"
   },
   "866cb993-edc0-4c78-91e7-67169b787938": {
@@ -255,19 +255,14 @@
     "relativePath": "Prefab"
   },
   "ae7d3dfd-083c-4496-abbf-2d9be9987ad2": {
-    "asset": 1490974674000,
-    "meta": 1490974674000,
+    "asset": 1491014459000,
+    "meta": 1491014459000,
     "relativePath": "Prefab/Bullet.prefab"
   },
   "a219fae9-ff2d-4caf-af95-2cd3848a041e": {
     "asset": 1490974669000,
     "meta": 1490974669000,
     "relativePath": "Prefab/Enermy.prefab"
-  },
-  "591d5d61-0f31-4c8a-8083-cee0add865f3": {
-    "asset": 1490975787000,
-    "meta": 1490975800000,
-    "relativePath": "Script/FlyingObject.js"
   },
   "924a363a-a191-427f-884f-493fcd3c6189": {
     "asset": 1490976436000,
@@ -280,18 +275,23 @@
     "relativePath": "Script/Enermy.js"
   },
   "63208da1-da7f-4b71-a800-090c32cb2f88": {
-    "asset": 1490977657000,
-    "meta": 1490977658000,
+    "asset": 1491014922000,
+    "meta": 1491014974000,
     "relativePath": "Script/GameLogic.js"
   },
   "eb04d65d-934d-4d2a-9c16-434104f415fb": {
-    "asset": 1490978502000,
-    "meta": 1491012495000,
+    "asset": 1491015472000,
+    "meta": 1491015531000,
     "relativePath": "Script/Game.js"
   },
+  "591d5d61-0f31-4c8a-8083-cee0add865f3": {
+    "asset": 1491021877000,
+    "meta": 1491022211000,
+    "relativePath": "Script/FlyingObject.js"
+  },
   "d8a6e857-1ac1-46de-a0e9-0d35d6e600a7": {
-    "asset": 1490978458000,
-    "meta": 1490978459000,
+    "asset": 1491022208000,
+    "meta": 1491022211000,
     "relativePath": "Script/PlayerPlane.js"
   }
 }

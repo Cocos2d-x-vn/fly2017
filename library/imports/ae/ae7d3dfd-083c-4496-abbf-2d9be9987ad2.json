@@ -100,6 +100,7 @@
       "__id__": 1
     },
     "_enabled": true,
+    "typeTag": "Bullet",
     "_liveTime": 0,
     "_liveTimeLimit": 0,
     "_speedX": 0,
