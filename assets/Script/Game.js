@@ -28,10 +28,16 @@ cc.Class({
             type: cc.Label
         },
 
-        // 生命值
+        // 生命值UI
         life: {
             default: null,
             type: cc.Label
+        },
+
+        // 背景
+        bg: {
+            default:null,
+            type: cc.Node
         },
 
         // GameOver
@@ -71,16 +77,24 @@ cc.Class({
         );
         // 启动游戏
         gameLogic.start();
+        // 设置背景滚动速度
+        this.bg.getComponent('ScrollBackground').speed = 10;
     },
 
     // called every frame, uncomment this function to activate update callback
     update: function (dt) {
         if(!gameLogic.isPlaying()) return;
 
+        // 运行游戏逻辑
         gameLogic.update(dt);
+
+        // 更新各种UI
         this.updateTime();
         this.updateScore();
         this.updateLife();
+
+        // 背景滚动
+        this.bg.getComponent('ScrollBackground').scroll(dt);
     },
 
     // 刷怪具体实现
