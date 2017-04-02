@@ -56,10 +56,13 @@
       },
       {
         "__id__": 3
+      },
+      {
+        "__id__": 4
       }
     ],
     "_prefab": {
-      "__id__": 4
+      "__id__": 5
     },
     "groupIndex": 0
   },
@@ -104,6 +107,23 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_atlas": null
+  },
+  {
+    "__type__": "cc.AudioSource",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "_clip": {
+      "__uuid__": "b3f500db-1600-4391-8ce3-b480370fb37e"
+    },
+    "_volume": 0.8,
+    "_mute": false,
+    "_loop": false,
+    "playOnLoad": true,
+    "preload": false
   },
   {
     "__type__": "cc.PrefabInfo",

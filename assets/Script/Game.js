@@ -78,7 +78,7 @@ cc.Class({
         // 启动游戏
         gameLogic.start();
         // 设置背景滚动速度
-        this.bg.getComponent('ScrollBackground').speed = 10;
+        this.bg.getComponent('ScrollBackground').speed = 1;
     },
 
     // called every frame, uncomment this function to activate update callback
